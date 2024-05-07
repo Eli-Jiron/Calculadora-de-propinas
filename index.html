@@ -6,25 +6,43 @@
     <title>Document</title>
 </head>
 <body>
-    <div><input readonly type="text" id="inputCuenta"></div>
+    <div id="inputCalc"></div>
     <div>
-        <button id="bNum1">1</button>
-        <button id="bNum2">2</button>
-        <button id="bNum3">3</button>
-        <button id="bNum4">4</button>
-        <button id="bNum5">5</button>
-        <button id="bNum6">6</button>      
-        <button id="bNum7">7</button>
-        <button id="bNum8">8</button>
-        <button id="bNum9">9</button>
-        <button id="bNum0">0</button>
-        <button id="bSuma">+</button>
-        <button id="bResta">-</button>
-        <button id="bMult">*</button>
-        <button id="bDivi">/</button>
+        <button onclick="Valores(1)">1</button>
+        <button onclick="Valores(2)">2</button>
+        <button onclick="Valores(3)">3</button>
+        <button onclick="Valores(4)">4</button>
+        <button onclick="Valores(5)">5</button>
+        <button onclick="Valores(6)">6</button>      
+        <button onclick="Valores(7)">7</button>
+        <button onclick="Valores(8)">8</button>
+        <button onclick="Valores(9)">9</button>
+        <button onclick="Valores(0)">0</button>
+        <button onclick="Valores('+')">+</button>
+        <button onclick="Valores('-')">-</button>
+        <button onclick="Valores('*')">*</button>
+        <button onclick="Valores('/')">/</button>
         <button id="bCalc">Calc</button>
         <button id="bBorrar">Borrar</button>
     </div>
+
+    <div id="inputPropina"></div>
+
+    <div>
+        <button onclick="valPropina(1)">1</button>
+        <button onclick="valPropina(2)">2</button>
+        <button onclick="valPropina(3)">3</button>
+        <button onclick="valPropina(4)">4</button>
+        <button onclick="valPropina(5)">5</button>
+        <button onclick="valPropina(6)">6</button>      
+        <button onclick="valPropina(7)">7</button>
+        <button onclick="valPropina(8)">8</button>
+        <button onclick="valPropina(9)">9</button>
+        <button onclick="valPropina(0)">0</button>
+        <button id="bCalcPropina">Propina</button>
+        <button id="bBorrarP">Borrar</button>
+    </div>
+    <div id="mostrarPrpna"></div>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
