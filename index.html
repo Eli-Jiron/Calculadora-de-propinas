@@ -4,45 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    <div id="inputCalc"></div>
-    <div>
-        <button onclick="Valores(1)">1</button>
-        <button onclick="Valores(2)">2</button>
-        <button onclick="Valores(3)">3</button>
-        <button onclick="Valores(4)">4</button>
-        <button onclick="Valores(5)">5</button>
-        <button onclick="Valores(6)">6</button>      
-        <button onclick="Valores(7)">7</button>
-        <button onclick="Valores(8)">8</button>
-        <button onclick="Valores(9)">9</button>
-        <button onclick="Valores(0)">0</button>
-        <button onclick="Valores('+')">+</button>
-        <button onclick="Valores('-')">-</button>
-        <button onclick="Valores('*')">*</button>
-        <button onclick="Valores('/')">/</button>
-        <button id="bCalc">Calc</button>
-        <button id="bBorrar">Borrar</button>
-    </div>
+    <button onclick=window.modal1.showModal()>Abrir Calculadora</button>
+    <dialog id="modal1">
+        <div id="inputCalc"></div>
+        <div>
+            <div>
+                <button onclick="Valores(1)">1</button>
+                <button onclick="Valores(2)">2</button>
+                <button onclick="Valores(3)">3</button>
+            </div>
+            <div>
+                <button onclick="Valores(4)">4</button>
+                <button onclick="Valores(5)">5</button>
+                <button onclick="Valores(6)">6</button> 
+            </div>
+            <div>
+                <button onclick="Valores(7)">7</button>
+                <button onclick="Valores(8)">8</button>
+                <button onclick="Valores(9)">9</button>
+            </div>
+            <div>
+                <button onclick="Valores(0)">0</button>
+            </div>
+            <div>
+                <button onclick="Valores('+')">+</button>
+                <button onclick="Valores('-')">-</button>
+                <button onclick="Valores('*')">*</button>
+                <button onclick="Valores('/')">/</button>
+            </div>
+            <div>
+                <button onclick=window.modal1.close()>Off</button>
+                <button onclick=window.modal2.showModal()>Propina</button>
+                <button id="bCalc">=</button>
+                <button id="bBorrar">C</button>
+            </div>
+        </div>
+    </dialog>
 
-    <div id="inputPropina"></div>
-
-    <div>
-        <button onclick="valPropina(1)">1</button>
-        <button onclick="valPropina(2)">2</button>
-        <button onclick="valPropina(3)">3</button>
-        <button onclick="valPropina(4)">4</button>
-        <button onclick="valPropina(5)">5</button>
-        <button onclick="valPropina(6)">6</button>      
-        <button onclick="valPropina(7)">7</button>
-        <button onclick="valPropina(8)">8</button>
-        <button onclick="valPropina(9)">9</button>
-        <button onclick="valPropina(0)">0</button>
-        <button id="bCalcPropina">Propina</button>
-        <button id="bBorrarP">Borrar</button>
-    </div>
-    <div id="mostrarPrpna"></div>
+    <dialog id="modal2">
+        <div>
+            <div>
+                <div id="inputPropina"></div>
+                <div id="mostrarPrpna"></div>
+            </div>
+            <div>
+                <button onclick="valPropina(1)">1</button>
+                <button onclick="valPropina(2)">2</button>
+                <button onclick="valPropina(3)">3</button>
+            </div>
+            <div>
+                <button onclick="valPropina(4)">4</button>
+                <button onclick="valPropina(5)">5</button>
+                <button onclick="valPropina(6)">6</button>   
+            </div>
+            <div>
+                <button onclick="valPropina(7)">7</button>
+                <button onclick="valPropina(8)">8</button>
+                <button onclick="valPropina(9)">9</button>
+            </div>
+            <div>
+                <button onclick="valPropina(0)">0</button>
+            </div>
+            <div>
+                <button onclick=window.modal2.close()>Off</button>
+                <button id="bCalcPropina">Propina</button>
+                <button id="bBorrarP">C</button>
+            </div>
+        </div>
+    </dialog>
     <script src="./src/js/script.js"></script>
 </body>
 </html>
