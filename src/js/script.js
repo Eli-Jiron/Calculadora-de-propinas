@@ -1,7 +1,7 @@
 let bCalcPropina = document.getElementById('bCalcPropina');
 let bCalc = document.getElementById('bCalc');
-let bBorrar  = document.getElementById('bBorrar');
-let bBorrarP  = document.getElementById('bBorrarP');
+let bBorrar = document.getElementById('bBorrar');
+let bBorrarP = document.getElementById('bBorrarP');
 let inputCalc = document.getElementById('inputCalc');
 let inputPropina = document.getElementById('inputPropina');
 let mostrarPrpna = document.getElementById('mostrarPrpna');
@@ -19,14 +19,14 @@ function Calc() {
 };
 
 function Propina() {
-    let prpna = inputPropina.textContent;
+    let propina = inputPropina.textContent;
     let result = inputCalc.textContent;
-     if (prpna == '' || result == '') {
+     if (propina == '' || result == '') {
         alert('Primero debe llenar los espacios');
      } else {
-            prpna = prpna / 100;
+            propina = propina / 100;
             result =  Function("return " + result)();
-            mostrarPrpna.textContent = result * prpna;      
+            mostrarPrpna.textContent = result * propina;      
      }
 };
 
