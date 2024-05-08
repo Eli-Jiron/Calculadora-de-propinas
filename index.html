@@ -3,78 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de propinas</title>
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    <button onclick=window.modal1.showModal()>Abrir Calculadora</button>
-    <dialog id="modal1">
-        <div id="inputCalc"></div>
-        <div>
-            <div>
-                <button onclick="Valores(1)">1</button>
-                <button onclick="Valores(2)">2</button>
-                <button onclick="Valores(3)">3</button>
+    <div>
+        <button onclick=window.modal1.showModal()>Abrir Calculadora</button>
+        <dialog id="modal1">
+            <div class="bBorder">
+                <div class="inputs" id="inputCalc"></div>
             </div>
-            <div>
-                <button onclick="Valores(4)">4</button>
-                <button onclick="Valores(5)">5</button>
-                <button onclick="Valores(6)">6</button> 
+            <div class="calculadora">
+                <div class="operadores">
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('+')">+</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('-')">-</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('*')">*</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('/')">/</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(1)">1</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(2)">2</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(3)">3</div>
+                        </div>
+                    </div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(4)">4</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(5)">5</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(6)">6</div> 
+                        </div>
+                    </div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(7)">7</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(8)">8</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(9)">9</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(0)">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="operadores">
+                    <div class="bBorder">
+                        <div class="buttons" onclick=window.modal1.close()>Off</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" id="bBorrar">C</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" id="bCalc">=</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick=window.modal2.showModal()>Propina</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button onclick="Valores(7)">7</button>
-                <button onclick="Valores(8)">8</button>
-                <button onclick="Valores(9)">9</button>
+        </dialog>
+    
+        <dialog id="modal2">
+            <div class="bBorder">
+                <div class="inputs">
+                    <div id="inputPropina"></div>
+                    <div id="mostrarPrpna"></div>
+                </div>
             </div>
-            <div>
-                <button onclick="Valores(0)">0</button>
+            <div  class="calculadora">
+                <div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(1)">1</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(2)">2</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(3)">3</div>
+                        </div>
+                    </div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(4)">4</div> 
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(5)">5</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(6)">6</div> 
+                        </div> 
+                    </div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(7)">7</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(8)">8</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="valPropina(9)">9</div>
+                        </div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="valPropina(0)">0</div>
+                    </div>
+                </div>
+                <div class="operadores">
+                    <div class="bBorder">
+                        <div class="buttons" onclick=window.modal2.close()>Off</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" id="bBorrarP">C</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" id="bCalcPropina">=</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button onclick="Valores('+')">+</button>
-                <button onclick="Valores('-')">-</button>
-                <button onclick="Valores('*')">*</button>
-                <button onclick="Valores('/')">/</button>
-            </div>
-            <div>
-                <button onclick=window.modal1.close()>Off</button>
-                <button onclick=window.modal2.showModal()>Propina</button>
-                <button id="bCalc">=</button>
-                <button id="bBorrar">C</button>
-            </div>
-        </div>
-    </dialog>
+        </dialog>
+    </div>
 
-    <dialog id="modal2">
-        <div>
-            <div>
-                <div id="inputPropina"></div>
-                <div id="mostrarPrpna"></div>
-            </div>
-            <div>
-                <button onclick="valPropina(1)">1</button>
-                <button onclick="valPropina(2)">2</button>
-                <button onclick="valPropina(3)">3</button>
-            </div>
-            <div>
-                <button onclick="valPropina(4)">4</button>
-                <button onclick="valPropina(5)">5</button>
-                <button onclick="valPropina(6)">6</button>   
-            </div>
-            <div>
-                <button onclick="valPropina(7)">7</button>
-                <button onclick="valPropina(8)">8</button>
-                <button onclick="valPropina(9)">9</button>
-            </div>
-            <div>
-                <button onclick="valPropina(0)">0</button>
-            </div>
-            <div>
-                <button onclick=window.modal2.close()>Off</button>
-                <button id="bCalcPropina">Propina</button>
-                <button id="bBorrarP">C</button>
-            </div>
-        </div>
-    </dialog>
     <script src="./src/js/script.js"></script>
 </body>
 </html>

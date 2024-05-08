@@ -2,3 +2,31 @@
     position: relative;
     margin-left: 57.5%;
 }
+.calculadora {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.numeros {
+    display: flex;
+    justify-content: center;
+
+}
+.operadores {
+    display: flex;
+    flex-direction: column;
+}
+
+.bBorder {
+    border: 1.5px solid black;
+    border-radius: 3px;
+    text-align: center;
+}
+.buttons{
+    margin: 5px;
+}
+.inputs{
+    margin: 5px;
+    height: 20px;
+    text-align: end;
+}
