@@ -16,6 +16,9 @@ function valPropina(n) {
 
 function Calc() {
     inputCalc.textContent = Function("return " + inputCalc.textContent)();
+    if (inputCalc.textContent == Infinity) {
+        inputCalc.textContent = 'No puedes repartir manzanas entre 0 amigos'
+    }
 };
 
 function Propina() {
@@ -25,9 +28,13 @@ function Propina() {
         alert('Primero debe llenar los espacios');
      } else {
             propina = propina / 100;
-            result =  Function("return " + result)();
-            mostrarPrpna.textContent = result * propina;      
+            result = Function("return " + result)();
+            mostrarPrpna.textContent = Math.round(result * propina);      
      }
+     if (mostrarPrpna.textContent == Infinity || mostrarPrpna.textContent == '0') {
+        inputPropina.textContent = ''
+        mostrarPrpna.textContent = 'No puedes sacar el % de 0 manzanas'
+    }
 };
 
 bCalc.addEventListener('click', () => Calc());
