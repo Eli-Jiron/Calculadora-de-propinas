@@ -1,6 +1,10 @@
+#modal1{
+    border-radius: 10px;
+}
 #modal2 {
     position: relative;
-    margin-left: 57.5%;
+    margin-left: 64%;
+    border-radius: 10px;
 }
 .calculadora {
     display: flex;
@@ -19,14 +23,34 @@
 
 .bBorder {
     border: 1.5px solid black;
+    backdrop-filter: blur(13px);
     border-radius: 3px;
     text-align: center;
+    margin-bottom: 5px;
 }
 .buttons{
     margin: 5px;
+    width: 3.9vw;
+    height: 4vw;
 }
 .inputs{
+
     margin: 5px;
-    height: 20px;
+    height: 55px;
     text-align: end;
+}
+
+.a{
+    background-image: url(/Calculadora-de-propinas/src/img/Kuromi\ wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+body {
+    background-image: url(/Calculadora-de-propinas/src/img/matrixbg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
