@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(to right, rgba(48,248,161,1) 0%, rgba(91,241,173,1) 0%, rgba(179,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30f8a1', endColorstr='#b300ff', GradientType=1 );
+}
 #modal1{
     border-radius: 10px;
 }
@@ -6,35 +10,59 @@
     margin-left: 64%;
     border-radius: 10px;
 }
+.shadow{
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,1);
+}
 .calculadora {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: .3fr 1fr .3fr;
+    gap: 5px;
+}
+.calculadoraP {
+    display: grid;
+    grid-template-columns: 1fr .3fr;
     gap: 5px;
 }
 .numeros {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: baseline;
 
 }
 .operadores {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 .bBorder {
+    display: flex;
+    align-items: center;
     border: 1.5px solid black;
     backdrop-filter: blur(13px);
-    border-radius: 3px;
-    text-align: center;
+    border-radius: 15px;
     margin-bottom: 5px;
 }
 .buttons{
-    margin: 5px;
-    width: 3.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
     height: 4vw;
 }
-.inputs{
-
+.buttonsP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.input{
+    text-align: center;
+    margin: 5px;
+    height: 75px;
+}
+.inputP{
     margin: 5px;
     height: 55px;
     text-align: end;
@@ -48,9 +76,42 @@
 
 }
 
-body {
-    background-image: url(/Calculadora-de-propinas/src/img/matrixbg.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+#b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    height: 75px;
+}
+
+.divHeaderText {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    color: black;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    background-color: aquamarine;
+}
+.footerItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

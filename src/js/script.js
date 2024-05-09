@@ -29,9 +29,9 @@ function Propina() {
      } else {
             propina = propina / 100;
             result = Function("return " + result)();
-            mostrarPrpna.textContent = Math.round(result * propina);      
+            mostrarPrpna.textContent = result * propina;      
      }
-     if (mostrarPrpna.textContent == Infinity || mostrarPrpna.textContent == '0') {
+     if (result == Infinity || result == '0') {
         inputPropina.textContent = ''
         mostrarPrpna.textContent = 'No puedes sacar el % de 0 manzanas'
     }
