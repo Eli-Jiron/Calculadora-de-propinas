@@ -24,12 +24,14 @@ function Calc() {
 function Propina() {
     let propina = inputPropina.textContent;
     let result = inputCalc.textContent;
+    let resultP 
      if (propina == '' || result == '') {
         alert('Primero debe llenar los espacios');
      } else {
             propina = propina / 100;
             result = Function("return " + result)();
-            mostrarPrpna.textContent = result * propina;      
+            resultP = result * propina;    
+            mostrarPrpna.textContent = resultP + result  
      }
      if (result == Infinity || result == '0') {
         inputPropina.textContent = ''

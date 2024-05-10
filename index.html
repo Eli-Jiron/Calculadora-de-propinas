@@ -7,107 +7,103 @@
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    <nav>
+    <header>
         <div class="navHeader">
             <div>
                 <div>
-                    <div><img src="" alt="a"></div>
+                    <div class="fontHeaderTtl">Calculadora super mega duper ✦chiba✦ </div>
                 </div>
             </div>
             <div>
                 <div class="divHeaderText">
-                    <div>aaa</div>
-                    <div>sss</div>
-                    <div>xxx</div>
-                    <div>ccc</div>
+                    <div><img src="/Calculadora-de-propinas/src/img/icons8-calculator-50.png" alt="calculadora"></div>
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <div id="b">
+    <div id="buttonCalc">
+        <h1 class="fontHeaderTtl">Toca aquí</h1>
         <button onclick=window.modal1.showModal()><img src="/Calculadora-de-propinas/src/img/icons8-calculadora-50.png" alt=""></button>
     </div>
     <div>
-        <dialog class="a , shadow" id="modal1">
-            <div>
-                <div class="bBorder">
-                    <div class="input" id="inputCalc"></div>
+        <dialog class="calcBg , shadow , fontCacl" id="modal1">
+            <div class="bBorder">
+                <div class="input" id="inputCalc"></div>
+            </div>
+            <div class="calculadora">
+                <div class="operadores">
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('+')">+</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('-')">-</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('*')">*</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick="Valores('/')">/</div>
+                    </div>
                 </div>
-                <div class="calculadora">
-                    <div class="operadores">
+                <div>
+                    <div class="numeros">
                         <div class="bBorder">
-                            <div class="buttons" onclick="Valores('+')">+</div>
+                            <div class="buttons" onclick="Valores(1)">1</div>
                         </div>
                         <div class="bBorder">
-                            <div class="buttons" onclick="Valores('-')">-</div>
+                            <div class="buttons" onclick="Valores(2)">2</div>
                         </div>
                         <div class="bBorder">
-                            <div class="buttons" onclick="Valores('*')">*</div>
+                            <div class="buttons" onclick="Valores(3)">3</div>
+                        </div>
+                    </div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(4)">4</div>
                         </div>
                         <div class="bBorder">
-                            <div class="buttons" onclick="Valores('/')">/</div>
+                            <div class="buttons" onclick="Valores(5)">5</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(6)">6</div> 
+                        </div>
+                    </div>
+                    <div class="numeros">
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(7)">7</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(8)">8</div>
+                        </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(9)">9</div>
                         </div>
                     </div>
                     <div>
-                        <div class="numeros">
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(1)">1</div>
-                            </div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(2)">2</div>
-                            </div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(3)">3</div>
-                            </div>
-                        </div>
-                        <div class="numeros">
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(4)">4</div>
-                            </div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(5)">5</div>
-                            </div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(6)">6</div> 
-                            </div>
-                        </div>
-                        <div class="numeros">
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(7)">7</div>
-                            </div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(8)">8</div>
-                            </div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(9)">9</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bBorder">
-                                <div class="buttons" onclick="Valores(0)">0</div>
-                            </div>
+                        <div class="bBorder">
+                            <div class="buttons" onclick="Valores(0)">0</div>
                         </div>
                     </div>
-                    <div class="operadores">
-                        <div class="bBorder">
-                            <div class="buttons" onclick=window.modal1.close()>Off</div>
-                        </div>
-                        <div class="bBorder">
-                            <div class="buttons" id="bBorrar">C</div>
-                        </div>
-                        <div class="bBorder">
-                            <div class="buttons" id="bCalc">=</div>
-                        </div>
-                        <div class="bBorder">
-                            <div class="buttons" onclick=window.modal2.showModal()>Propina</div>
-                        </div>
+                </div>
+                <div class="operadores">
+                    <div class="bBorder">
+                        <div class="buttons" onclick=window.modal1.close()>Off</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" id="bBorrar">C</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" id="bCalc">=</div>
+                    </div>
+                    <div class="bBorder">
+                        <div class="buttons" onclick=window.modal2.showModal()>Propina</div>
                     </div>
                 </div>
             </div>
         </dialog>
     
-        <dialog class="a , shadow" id="modal2">
+        <dialog class="calcBg , shadow , fontCaclP" id="modal2">
             <div class="bBorder">
                 <div class="inputP">
                     <div id="inputPropina"></div>
@@ -169,16 +165,13 @@
     </div>
 
     <footer>
-        <div>
+        <div class="fontFooter">
             <div class="footerItems">
-                <div>a</div>
-                <div>s</div>
-                <div>d</div>
-                <div>w</div>
+                <div>©Creada en mayo de 2024</div>
+                <div>Proyecto para FWD</div>
             </div>
-            <div>
-                <div></div>
-            </div>
+            <div class="footerItems">Creado por: Elian</div>
+            <div class="footerItems">Feliz semana del profesor < 3</div>
         </div>
     </footer>
 
