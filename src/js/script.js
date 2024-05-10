@@ -5,10 +5,20 @@ let bBorrarP = document.getElementById('bBorrarP');
 let inputCalc = document.getElementById('inputCalc');
 let inputPropina = document.getElementById('inputPropina');
 let mostrarPrpna = document.getElementById('mostrarPrpna');
+let prmerClick = true
 
 function Valores(n) {
     inputCalc.textContent += n;
+    prmerClick = true
+
 };
+
+function ValoresOp(op) {
+    if (prmerClick == true) {
+        inputCalc.textContent += op
+        prmerClick = false
+    }
+}
 
 function valPropina(n) {
     inputPropina.textContent += n;
@@ -45,6 +55,7 @@ bCalcPropina.addEventListener('click', () => Propina());
 
 bBorrar.addEventListener('click', function () {
     inputCalc.textContent = '';
+    prmerClick = true
 });
 
 bBorrarP.addEventListener('click', function () {
